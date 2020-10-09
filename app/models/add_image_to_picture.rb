@@ -1,0 +1,2 @@
+class AddImageToPicture < ApplicationRecord
+end

@@ -1,0 +1,11 @@
+<br>
+<%= link_to "Return the page", pictures_path %>
+<% @favorites.each do |favorite| %>
+  <div hidden><%= picture=Picture.find(favorite.picture_id) %></div>
+  <p>title: <%= picture.title %></p>
+  <p>content: <%= picture.content %></p>
+  <p>
+    <strong>Image:</strong>
+    <%= image_tag picture.image.url if picture.image? %>
+  </p>
+<% end %>

@@ -1,0 +1,20 @@
+
+<h2>List of posts!</h2>
+<br>
+<table class="PostTable">
+ <tr>
+   <th>Title</th>
+   <th>User</th>
+ </tr>
+<% @pictures.each do |picture| %>
+ <tr>
+   <td><%= picture.title %></td>
+   <td><%= picture.user.name %></td>
+   <td><%= link_to 'SHOW', picture_path(picture.id) %></td>
+   <td><%= link_to "EDIT", edit_picture_path(picture.id), data: { confirm: 'Can you really edit？' } %></td>
+   <td><%= link_to 'DELETE', picture_path(picture.id), method: :delete ,data: { confirm: 'Can you really delete？' } %></td>
+ </tr>
+<% end %>
+</table>
+<br>
+<%= link_to 'Add new post', new_picture_path %>

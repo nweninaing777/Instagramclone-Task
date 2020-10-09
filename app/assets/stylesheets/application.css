@@ -1,0 +1,72 @@
+
+ header {
+   width: 100%;
+   height: 55px;
+   color:#5EDB3C ;
+   background-color:#DB3C41 ;
+   font-style: oblique;
+ }
+ header ul {
+   margin: 0 auto;
+   list-style: none;
+ }
+ header ul a {
+   display: block;
+   padding: 15px;
+   text-decoration: none;
+   color: white;
+ }
+
+ .header{
+     font-size:20px;
+     font-weight:bold;
+     text-align:center;
+     padding-top: 10px;
+ }
+ .btn{
+   background-color: #54DB3C;
+     text-decoration: none;
+ }
+ .container {
+   text-align: center;
+ }
+
+ .form-group {
+   font-size: 20px;
+ }
+
+.user-form{
+  margin: auto;
+}
+h2{
+  color: green;
+  font-style: italic;
+}
+
+.main-container{
+  padding: 40px auto;
+  width: 100%;
+  position: relative;
+  background-color: #e2e2e2;
+  height: 100%;
+}
+.login-form{
+  margin: auto;
+}
+
+.login-form-content{
+  padding: 10px 0 ;
+}
+.login-container{
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.wrapper{
+  background: url("whiteprofile.png");
+
+}

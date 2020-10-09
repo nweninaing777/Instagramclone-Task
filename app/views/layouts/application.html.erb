@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>InstagramCloneApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <div class="wrapper">
+        <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "#{key}") %>
+        <% end %>
+        <% if logged_in? %>
+        <button type="button" class="btn"><%= link_to "Profile", user_path(current_user.id) %></button>
+          <button type="button" class="btn"><%= link_to "Logout", session_path(current_user.id), method: :delete %></button>
+        <% else %>
+        <button type="button" class="btn">  <%= link_to "Sign up", new_user_path %></button>
+        <button type="button" class="btn">  <%= link_to "Login", new_session_path %></button>
+        <% end %>
+      <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
