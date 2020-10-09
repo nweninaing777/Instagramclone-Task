@@ -73,3 +73,11 @@ label {
     margin-bottom: 5px;
     font-weight: 700;
 }
+
+.PostTable {
+    border-collapse: separate;
+    border-spacing: 15px 7px;
+    margin-left : auto ;
+	  margin-right : auto ;
+    text-align: center;
+}
