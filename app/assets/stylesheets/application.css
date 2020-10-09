@@ -68,5 +68,11 @@ h2{
 
 .wrapper{
   background: url("whiteprofile.png");
-
+text-align: center;
+}
+label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
