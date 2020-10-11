@@ -25,5 +25,6 @@ Rails.application.configure do
   end
 
   config.active_record.dump_schema_after_migration = false
-
+  config.action_mailer.default_url_options = { host: 'https://glacial-temple-44844.herokuapp.com' }
+    config.action_mailer.delivery_method = :letter_opener_web
 end

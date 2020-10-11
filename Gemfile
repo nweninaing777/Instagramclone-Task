@@ -18,9 +18,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem'dotenv-rails'
-end
-
+  end
+gem'dotenv-rails'
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
